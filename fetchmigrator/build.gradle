@@ -67,7 +67,7 @@ dependencies {
 publish {
     userOrg = 'tonyofrancis'
     groupId = 'androidx.tonyodev.fetchmigrator'
-    artifactId = 'xfetchmigrator'
+    artifactId = 'fetchmigrator'
     publishVersion = library_version
     desc = 'Migration Assistant for Fetch'
     website = 'https://github.com/tonyofrancis/fetch'
