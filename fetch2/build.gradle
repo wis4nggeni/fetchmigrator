@@ -76,7 +76,7 @@ dependencies {
 publish {
     userOrg = 'tonyofrancis'
     groupId = 'androidx.tonyodev.fetch2'
-    artifactId = 'xfetch2'
+    artifactId = 'fetch2'
     publishVersion = library_version
     desc = 'Fetch is a simple, powerful, customizable file download manager library for Android.'
     website = 'https://github.com/tonyofrancis/fetch'
